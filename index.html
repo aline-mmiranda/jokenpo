@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aline M Miranda - https://github.com/aline-mmiranda">
+    <title>じゃんけんぽん - JokenPô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="splash">
+        <h1 class="title-splash">じゃんけんぽん</h1>
+        <h3 class="subtitle-splash">Jokenpô</h3>
+        <div class="track">
+            <div class="fill" id="prog"></div>
+        </div>
+    </section>
+
+    <main class="app" id="app">
+        <section class="glass">
+            <h1 class="title-app">Jokenpô</h1>
+            <p class="subtitle-app">Escolha sua jogada</p>
+
+            <div class="choices">
+                <img src="./assets/rock.png" alt="Rock" id="rock">
+                <img src="./assets/paper.png" alt="Paper" id="paper">
+                <img src="./assets/scissors.png" alt="Scissors" id="scissors">
+            </div>
+
+            <p class="wait">Esperando sua jogada...</p>
+
+            <div class="players">
+                <div class="player">
+                    <h4 class="player-you">Você</h4>
+                    <img src="./assets/rock.png" alt="Your Choice" id="your-choice">
+                </div>
+                <span>x</span>
+                <div class="player">
+                    <h4 class="player-robot">Robô</h4>
+                    <img src="./assets/rock.png" alt="Robot Choice" id="robot-choice">
+                </div>
+            </div>
+
+            <div class="score">
+                <span>0</span>
+                <p>Pontuação</p>
+                <span>0</span>
+            </div>
+        </section>
+    </main>
+
+    <section class="badge">
+        <a href="https://www.linkedin.com/in/aline-mmiranda/" target="_blank">
+            <div class="avatar">AM</div>
+            <div class="container">
+                <span>feito por</span>
+                <span>Aline M Miranda</span>
+                <span>design & dev</span>
+            </div>
+        </a>
+    </section>
+</body>
+
+</html>
