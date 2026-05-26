@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div id="bg-current"></div>
+    <div id="bg-next"></div>
+
     <section id="splash">
         <h1 class="title-splash">じゃんけんぽん</h1>
         <h3 class="subtitle-splash">Jokenpô</h3>
@@ -23,37 +26,45 @@
             <h1 class="title-app">Jokenpô</h1>
             <p class="subtitle-app">Escolha sua jogada</p>
 
-            <div class="choices">
-                <img src="./assets/rock.png" alt="Rock" id="rock">
-                <img src="./assets/paper.png" alt="Paper" id="paper">
-                <img src="./assets/scissors.png" alt="Scissors" id="scissors">
+            <div class="choices" role="group" aria-label="Escolha sua jogada">
+                <button id="rock" aria-label="Pedra">
+                    <img src="./assets/rock.png" alt="">
+                </button>
+                <button id="paper" aria-label="Papel">
+                    <img src="./assets/paper.png" alt="">
+                </button>
+                <button id="scissors" aria-label="Tesoura">
+                    <img src="./assets/scissors.png" alt="">
+                </button>
             </div>
 
-            <p class="wait">Esperando sua jogada...</p>
+            <p class="status-display" aria-live="polite">Esperando sua jogada...</p>
 
             <div class="players">
                 <div class="player">
                     <h4 class="player-you">Você</h4>
-                    <img src="./assets/rock.png" alt="Your Choice" id="your-choice">
+                    <img src="./assets/rock.png" alt="" id="your-choice">
                 </div>
-                <span>x</span>
+                <span aria-hidden="true">x</span>
                 <div class="player">
                     <h4 class="player-robot">Robô</h4>
-                    <img src="./assets/rock.png" alt="Robot Choice" id="robot-choice">
+                    <img src="./assets/rock.png" alt="" id="robot-choice">
                 </div>
             </div>
 
-            <div class="score">
-                <span>0</span>
+            <div class="score" aria-label="Placar">
+                <span id="your-score" aria-label="Sua pontuação">0</span>
                 <p>Pontuação</p>
-                <span>0</span>
+                <span id="robot-score" aria-label="Pontuação do robô">0</span>
             </div>
+
+            <button id="reset-btn" title="Reiniciar placar">↺ Reiniciar</button>
         </section>
     </main>
 
     <section class="badge">
-        <a href="https://www.linkedin.com/in/aline-mmiranda/" target="_blank">
-            <div class="avatar">AM</div>
+        <a href="https://www.linkedin.com/in/aline-mmiranda/" target="_blank" rel="noopener noreferrer">
+            <div class="avatar" aria-hidden="true">AM</div>
             <div class="container">
                 <span>feito por</span>
                 <span>Aline M Miranda</span>
@@ -61,6 +72,8 @@
             </div>
         </a>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
