@@ -61,7 +61,7 @@ Projeto desenvolvido por [Aline M Miranda](https://github.com/aline-mmiranda).
 ## 📁 Estrutura do Projeto
 
 ```
-jokempo/
+jokenpo/
 ├── assets/
 │   ├── rock.png
 │   ├── paper.png
